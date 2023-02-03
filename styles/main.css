@@ -16,36 +16,19 @@ a {
     color: inherit;
 }
 
-button {
-    width: 150px;
-    height: 50px;
-}
-
-.horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.list-horizontal li{
-    display: inline-block;
-}
-
 ul, ol {
     text-decoration: none;
 }
 
-header {
-    background-color: rgb(255, 255, 255);
+#navbar {
+    background-color: rgb(30, 30, 30);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px rgb(158, 158, 158);
+    box-shadow: 0px 0px 5px rgb(146, 146, 146);
 }
 
-#navbar li {
+#navlinks li {
     box-sizing: border-box;
     display: inline-block;
     position: relative;
@@ -53,13 +36,13 @@ header {
     margin: 0 10px;
 }
 
-#navbar li a {
+#navlinks li a {
     font-size: 14px;
     line-height: 3.2;
     font-weight: 400;
     font-family: "poppins",sans-serif;
     position: relative;
-    color: rgb(65, 65, 65);
+    color: rgb(196, 196, 196);
     z-index: 1;
     display: inline-block;
     padding: 0 8px;
@@ -69,8 +52,8 @@ header {
     white-space: nowrap;
 }
 
-#navbar li a:hover {
-    color: rgb(0, 0, 0);
+#navlinks li a:hover {
+    color: rgb(255, 255, 255);
 }
 
 article {
@@ -80,31 +63,4 @@ article {
 
 article:nth-child(even){
     background-color: black;
-}
-
-#home{
-    background-image: linear-gradient(to bottom right, rgb(54, 57, 59), rgb(0, 0, 0));
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10px;
-}
-
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    height: 100%;
-}
-
-.item-container {
-    width: 50%;
-    background-color: bisque;
 }
