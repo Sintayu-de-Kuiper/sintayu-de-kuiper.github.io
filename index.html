@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Sintayu de Kuiper</title>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-size: 40px;"><span style="color:#ff004f">P</span>ortfolio.</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">About me</a></li>
+                    <li><a href="#home">My work</a></li>
+                    <li><a href="#home">Hobbies</a></li>
+                    <li><a href="#home">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>&lt;/> Software-Dev</p>
+                <h1>Hi, I'm <span style="color: #ff004f;">Sintayu</span> de Kuiper<br>from the Netherlands</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/head.png" alt="Sintayu">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto rerum ipsum alias odit distinctio optio excepturi quis minima cupiditate. Omnis aperiam pariatur atque ipsum voluptates nesciunt nostrum, corporis ex quod sit quidem doloremque itaque nihil ipsa. Id vel quam quos voluptatibus in delectus eligendi tempora repudiandae reprehenderit aspernatur, illo neque numquam doloribus, similique ab molestiae. Hic, minima magnam veniam voluptatibus similique perspiciatis omnis sed ipsum quaerat provident soluta, nihil odit temporibus possimus porro dolores blanditiis quisquam fuga. Quia facilis maxime, similique illo quas laudantium fuga consectetur pariatur et eius qui facere ipsam sed nemo nam ea obcaecati dolores explicabo.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span style="color: #b54769; font-size: 14px;">Software Dev.</span><br>Designing and realizing software solutions</li>
+                            <li><span style="color: #b54769; font-size: 14px;">Web Development</span><br>Web design and development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="color: #b54769; font-size: 14px;">HAVO/VWO TTO</span><br>A high level, bilingual highschool education</li>
+                            <li><span style="color: #b54769; font-size: 14px;">(current) MBO Software-Development</span><br>A practice oriented study preparing me for the job market</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work/code.png" alt="">
+                    <div class="layer">
+                        <h3 style="color: #ff004f;">Programming</h3>
+                        <p>The game mastermind, writtem in java and built in Eclipse<br><br>
+                            <span style="font-weight: bolder;">features:</span><br>
+                            <ul>
+                                <li>4 Difficulties</li>
+                                <li>Login and registry</li>
+                                <li>Stored account data</li>
+                            </ul>
+                        </p>
+                        <a href="#"><img src="/images/icons/external-link.png" alt="external link icon"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work/site.png" alt="">
+                    <div class="layer">
+                        <h3 style="color: #ff004f;">Web Development</h3>
+                        <p>A website built in VS-Code that has a custom downloadable css library<br><br>
+                            <span style="font-weight: bolder;">features:</span><br>
+                            <ul>
+                                <li>downloadable library</li>
+                                <li>examples of the library</li>
+                            </ul>
+                        </p>
+                        <a href="#"><img src="/images/icons/external-link.png" alt="external link icon"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work/design.png" alt="">
+                    <div class="layer">
+                        <h3 style="color: #ff004f;">Web Design</h3>
+                        <p>A design made in Figma.<br><br>
+                            I use figma to design all of my websites,<br>
+                            but also to create design experiments.
+                        </p>
+                        <a href="#"><img src="/images/icons/external-link.png" alt="external link icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me!</h1>
+                    <p>contact@example.com</p>
+                    <p>06 12345678</p>
+                    <div class="social-icons">
+                        <img style="background-color: white; width: 30px;" src="/images/icons/facebook.avif" alt="">
+                        <img style="background-color: white; width: 30px;" src="/images/icons/twitter.avif" alt="">
+                        <img style="background-color: white; width: 30px;" src="/images/icons/insta.avif" alt="">
+                        <img style="background-color: white; width: 30px;" src="/images/icons/linked-in.avif" alt="">
+                    </div>
+                </div>
+                <div class="contact-right"></div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
